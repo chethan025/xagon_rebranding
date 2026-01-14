@@ -96,8 +96,14 @@ body {
   opacity: 0.85;
 }
 
-/* MOBILE OPTIMIZATION */
+/* MOBILE: TRUE FULL HEIGHT */
 @media (max-width: 768px) {
+  .rebrand-section {
+    min-height: 100svh; /* modern mobile browsers */
+    min-height: 100vh;  /* fallback */
+    background-size: 160% auto; /* looks better on tall screens */
+  }
+
   .rebrand-content {
     padding: 1.5rem;
   }
