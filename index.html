@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Xagon Rebranding Section</title>
+
+<style>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* SECTION */
+.rebrand-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("C:/Users/pavan/OneDrive/Desktop/xagon rebranding/New\ Collections.png") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* OVERLAY */
+.rebrand-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.2),
+    rgba(0,0,0,0.6)
+  );
+}
+
+/* CONTENT */
+.rebrand-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+  max-width: 1200px;
+}
+
+/* MAIN TITLE */
+.rebrand-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+/* SUBTITLE */
+.rebrand-subtitle {
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+}
+
+/* DESCRIPTION */
+.rebrand-description {
+  font-size: clamp(0.8rem, 1.3vw, 1rem);
+  line-height: 1.6;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+  .rebrand-content {
+    padding: 1.5rem;
+  }
+
+  .rebrand-description {
+    letter-spacing: 1px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<section class="rebrand-section">
+  <div class="rebrand-content">
+    <h1 class="rebrand-title">Xagon Rebranding</h1>
+    <div class="rebrand-subtitle">New Management in Place</div>
+    <p class="rebrand-description">
+      All remaining orders are being processed and will be shipped shortly.
+    </p>
+  </div>
+</section>
+
+</body>
+</html>
